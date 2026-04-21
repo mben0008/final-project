@@ -3,174 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Three Star Media App</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-
-    <title>Three Star Media - Home</title>
 </head>
-
 <body>
-    <header class="main-header">
-        <div class="logo">
-            <img src="images/logo.png" alt="Three Star Media Logo">
-        </div>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <form class="search-bar">
-            <input type="text" placeholder="Search">
-            <button type="submit">Search Icon</button>
-        </form>
-    </header>
-    <!-- Code for the home section of the website. -->
-    <main>
-        <section class="hero-section">
-            <img src="images/main-banner.jpg" alt="Three Star Media Office">
-            <h1>Welcome to Three Star Media</h1>
-            <p>Your strategic partner in high-impact digital storytelling and brand growth.</p>
-            <a href="#" class="btn-primary">Connect with us</a>
-        </section>
 
-        <!-- Code for the About section of the website. -->
-        <section class="about-section">
-            <div class="about-image"> <img src="images/about-us.jpg" alt="Our office space">
+    <div class="app-container">
+        
+        <header class="main-header">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
             </div>
-            <div class="about-content">
-                <h2>About Us</h2>
-                <p>Three Star Media is a full-service creative agency based in the heart of the city. We specialize in bridging the gap between traditional media and the digital frontier.</p>
-                <p>Our mission is to empower brands through innovative design, strategic marketing, and high-quality video production that resonates with modern audiences.</p>
-            </div>
-        </section>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <!-- Code for the Services section of the website. -->
-        <section class="services-section">
-            <div class="container"> <h2>Our Services</h2>        
+        <main>
+            <section class="hero-section">
+                <img src="images/main-banner.jpg" alt="Hero">
+                <div class="hero-content">
+                    <h1>Welcome</h1>
+                    <p>High-impact digital storytelling.</p>
+                    <a href="#" class="btn-primary">Connect</a>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <img src="images/about-us.jpg" alt="About">
+                <div class="text-block">
+                    <h2>About Us</h2>
+                    <p>Three Star Media is a full-service creative agency bridging the gap between traditional and digital media.</p>
+                </div>
+            </section>
+
+            <section class="services-section">
+                <div class="text-block">
+                    <h2>Services</h2>
+                </div>
+                
                 <article class="services-card">
-                    <img src="images/digital.jpg" alt="Digital ">
-                    <h3>Digital Transformation</h3>
-                    <p>Modernize your business infrastructure with our custom cloud solutions and digital workflow optimizations.</p>
-                    <a href="#" class="btn-secondary">Digital Plans</a>
+                    <img src="images/digital.jpg" alt="Digital">
+                    <div class="card-content">
+                        <h3>Digital</h3>
+                        <p>Modernize your infrastructure.</p>
+                        <a href="#" class="btn-secondary">View Plans</a>
+                    </div>
                 </article>
+
+                <article class="services-card">
+                    <img src="images/marketing.jpg" alt="Marketing">
+                    <div class="card-content">
+                        <h3>Marketing</h3>
+                        <p>Data-driven strategies.</p>
+                        <a href="#" class="btn-secondary">View Plans</a>
+                    </div>
+                </article>
+            </section>
+
+            <section class="content-section">
+                <img src="images/vision.jpg" alt="Vision">
+                <div class="text-block">
+                    <h2>Our Vision</h2>
+                    <p>To become the leading catalyst for creative innovation in a digital-first world.</p>
+                    <a href="#" class="btn-primary">Learn More</a>
                 </div>
+            </section>
 
-            <article class="services-card">
-                <img src="images/marketing.jpg" alt="Marketing">
-                <h3>Marketing</h3>
-                <p>Data-driven strategies designed to increase your reach, engagement, and conversion across all platforms.</p>
-                <a href="#" class="btn-secondary">Marketing Plans</a>
-            </article>
-
-            <article>
-                <img src="images/video.jpg" alt="Video Production">
-                <h3>Video Production</h3>
-                <p>From conceptual storyboarding to final post-production, we create cinematic content that tells your story.</p>
-                <a href="#" class="btn-secondary">Video Plans</a>
-            </article>
-
-            <article class="service-card">
-                <img src="images/web.jpg" alt="Web Development">
-                <h3>Web Development</h3>
-                <p>Responsive, fast-loading, and user-centric websites built with the latest industry-standard technologies.</p>
-                <a href="#" class="btn-secondary">Web Plans</a>
-            </article>
-
-            <article class="service-card">
-                <img src="images/print.jpg" alt="Print">
-                <h3>Print</h3>
-                <p>High-quality print collateral including business cards, brochures, and large-scale banners for your events.</p>
-                <a href="#" class="btn-secondary">Print Plans</a>
-            </article>
-        </section>
-
-        <section class="vision-section">
-            <img src="images/vision.jpg" alt="Our Vision">
-            <h2>Our Vision</h2>
-            <p>To become the leading catalyst for creative innovation, setting the standard for how brands communicate in a digital-first world.</p>
-            <a href="#" class="btn-primary">Learn More</a>
-        </section>
-
-        <!-- Code for the home section of the website. -->
-        <section class="team-section">
-            <h2>Our Team</h2>
-            <article class="team-member">
-                <img src="images/john.jpg" alt="John Doe">
-                <div class="member-info">
-                    <h3>John Doe</h3>
-                    <p class="job-title">CEO and Founder</p>
-                    <p>John has over 15 years of experience in creative direction and has led Three Star Media since its founding.</p>
+            <section class="team-section">
+                <div class="text-block">
+                    <h2>Our Team</h2>
                 </div>
-            </article>
-
-            <article class="team-member">
-                <img src="images/bob.jpg" alt="Bob Rite">
-                <div class="member-info">
-                    <h3>Bob Rite</h3>
-                    <p class="job-title">CFO and Partner</p>
-                    <p>Bob oversees our financial operations and strategic partnerships, focusing on sustainable growth and client success.</p>
+                <div class="team-grid">
+                    <article class="team-member">
+                        <img src="images/john.jpg" alt="John Doe">
+                        <h3>John Doe</h3>
+                        <p>CEO & Founder</p>
+                    </article>
+                    <article class="team-member">
+                        <img src="images/bob.jpg" alt="Bob Rite">
+                        <h3>Bob Rite</h3>
+                        <p>CFO & Partner</p>
+                    </article>
                 </div>
-            </article>
-        </section>
+            </section>
 
-        <!-- Code for the Contact section of the website. -->
-        <section class="contact-section">
-            <h2>Contact Us</h2>
-            <div class="contact-flex-container">
-                <div class="contact-form">
-                    <h3>Send us a message</h3>
-                    <form>
+            <section class="contact-section">
+                <div class="text-block">
+                    <h2>Contact Us</h2>
+                    <form class="contact-form">
                         <label for="name">Name</label>
-                        <input type="text" id="name">
-
+                        <input type="text" id="name" placeholder="Your Name">
+                        
                         <label for="email">Email</label>
-                        <input type="email" id="email" required>
+                        <input type="email" id="email" placeholder="Your Email">
                         
                         <label for="message">Message</label>
-                        <textarea id="message"></textarea>
-
-                        <button type="submit">Send</button>
+                        <textarea id="message" rows="4"></textarea>
+                        
+                        <button type="submit" class="btn-secondary">Send Message</button>
                     </form>
                 </div>
+            </section>
+        </main>
 
-                <div class="contact-info">
-                    <h3>Location</h3>
-                    <div class="map-placeholder">
+        <footer class="main-footer">
+            <p>© 2026 Three Star Media Inc.</p>
+        </footer>
 
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5607.900723389779!2d-75.75790842350504!3d45.34981427107239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1776014183132!5m2!1sen!2sca" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+    </div>
 
-                    </div>
-                    <h3>Hours of operation</h3>
-                    <table>
-                        <tr>
-                            <th>Days</th>
-                            <th>Hours</th>
-                        </tr>
-                        <tr>
-                            <td>Monday - Friday</td>
-                            <td>9am - 5pm</td>
-                        </tr>
-                        <tr>
-                            <td>Saturday - Sunday</td>
-                            <td>Closed</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </section>
-    </main>
-    
-    <footer class="main-footer">
-        <p>&copy; 2026 Three Star Media Inc.</p>
-    </footer>
-    
 </body>
 </html>

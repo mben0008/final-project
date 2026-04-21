@@ -5,19 +5,28 @@
     box-sizing: border-box;
 }
 
-/* --- VARIABLES & BASE STYLES --- */
 :root {
     --primary-gold: #c78c06;
     --light-gold: #ffe6ac;
     --dark-grey: #222;
     --white: #ffffff;
+    --app-width: 430px; /* Standard Mobile width */
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
-    line-height: 1.6;
-    color: var(--dark-grey);
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.app-container {
+    width: 100%;
+    max-width: var(--app-width);
     background-color: var(--white);
+    min-height: 100vh;
+    box-shadow: 0 0 50px rgba(0,0,0,0.3);
 }
 
 img {
@@ -25,76 +34,112 @@ img {
     display: block;
 }
 
-/* --- MOBILE STYLES (Default) --- */
-/* Everything here is for the phone version shown in your mockup */
-
-.container {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1200px; /* Constraint from instructions */
+/* --- HEADER --- */
+.main-header {
+    background-color: var(--primary-gold);
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-/* Example of Flexbox (Requirement) */
-.main-header {
+.logo img { width: 120px; margin: 0 auto; }
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--dark-grey);
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+/* --- HERO --- */
+.hero-section {
+    position: relative;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.hero-section img {
+    position: absolute;
+    width: 100%; height: 100%;
+    object-fit: cover;
+}
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero-content { position: relative; z-index: 1; text-align: center; }
+
+/* --- SECTIONS & TEXT --- */
+.text-block { padding: 25px 20px; }
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 10px;
+    border-left: 5px solid var(--primary-gold);
+    padding-left: 10px;
+}
+
+/* --- SERVICES & TEAM CARDS --- */
+.services-card, .team-member {
+    background-color: var(--light-gold);
+    margin: 0 20px 20px 20px;
+}
+
+.card-content { padding: 20px; }
+
+.team-grid { padding-bottom: 20px; }
+
+.team-member h3 { margin-top: 10px; padding: 0 20px; }
+.team-member p { padding: 0 20px 20px 20px; color: #555; }
+
+/* --- CONTACT FORM --- */
+.contact-form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: var(--primary-gold);
-    padding: 1rem;
+    gap: 10px;
 }
 
-/* --- DESKTOP STYLES (760px and above) --- */
-@media screen and (min-width: 760px) {
-    /* I am adding styles here for larger screens to change the layout */
-    
-    .main-header {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    /* Example of CSS Grid (Requirement) */
-    .services-section {
-        display: grid;
-        grid-template-columns: repeat(3, 1/3); /* Adjust based on your layout needs */
-        gap: 20px;
-    }
-
-    /* I am creating a container to keep all content centered and aligned in a straight line. */
-.container {
-    width: 100%;       /* Full width on mobile */
-    max-width: 1200px; /* Maximum width for desktop from your requirements */
-    margin: 0 auto;    /* This centers the container on the screen */
-    padding: 0 15px;   /* Adds a tiny bit of breathing room on the sides of the phone */
+.contact-form input, .contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    font-family: inherit;
 }
 
-/* I am making sure all images fill the width of their container so there is no white space to the right. */
-img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* I am styling the services cards with the light gold background from the mockup requirements. */
-.services-card {
-    background-color: var(--light-gold); /* #ffe6ac */
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    text-align: left;
-}
-
-.services-card h3, 
-.services-card p, 
-.services-card a {
-    margin: 15px; /* This keeps the text from touching the edges of the gold box */
-}
-
-/* Styling the buttons to be dark grey with white text like the mockup */
-.btn-secondary {
+/* --- BUTTONS --- */
+.btn-primary, .btn-secondary {
     display: inline-block;
-    background-color: var(--dark-grey); /* #222 */
-    color: var(--white);
-    padding: 10px 20px;
+    padding: 12px 20px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
 }
+
+.btn-primary { background-color: var(--primary-gold); color: var(--dark-grey); }
+.btn-secondary { background-color: var(--dark-grey); color: white; width: 100%; }
+
+.main-footer {
+    background-color: var(--dark-grey);
+    color: white;
+    padding: 20px;
+    text-align: center;
 }

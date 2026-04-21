@@ -3,123 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Three Star Media App</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Three Star Media - Final</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <div class="app-container">
-        
-        <header class="main-header">
-            <div class="logo">
-                <img src="images/logo.png" alt="Logo">
-            </div>
-            <nav class="main-nav">
+    <div class="mobile-container">
+        <header class="header">
+            <img src="images/logo.png" alt="Logo" class="logo-img">
+            <nav class="nav-bar">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Team</a></li>
-                    <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
+            <div class="search-section">
+                <input type="text" placeholder="Search">
+            </div>
         </header>
 
         <main>
-            <section class="hero-section">
-                <img src="images/main-banner.jpg" alt="Hero">
-                <div class="hero-content">
-                    <h1>Welcome</h1>
-                    <p>High-impact digital storytelling.</p>
-                    <a href="#" class="btn-primary">Connect</a>
+            <section class="hero" style="background-image: url('images/main-banner.jpg');">
+                <div class="hero-text">
+                    <h1>Welcome to Three Star Media</h1>
+                    <p>Your strategic partner in digital storytelling.</p>
+                    <a href="#" class="btn-gold">CONNECT WITH US</a>
                 </div>
             </section>
 
-            <section class="content-section">
+            <section class="about-section">
                 <img src="images/about-us.jpg" alt="About">
-                <div class="text-block">
+                <div class="gold-box">
                     <h2>About Us</h2>
-                    <p>Three Star Media is a full-service creative agency bridging the gap between traditional and digital media.</p>
+                    <p>Three Star Media is a full-service creative agency based in the heart of the city.</p>
                 </div>
             </section>
 
             <section class="services-section">
-                <div class="text-block">
-                    <h2>Services</h2>
-                </div>
+                <h2 class="section-title">Our Services</h2>
                 
-                <article class="services-card">
+                <div class="stack-card">
                     <img src="images/digital.jpg" alt="Digital">
-                    <div class="card-content">
-                        <h3>Digital</h3>
-                        <p>Modernize your infrastructure.</p>
-                        <a href="#" class="btn-secondary">View Plans</a>
+                    <div class="gold-box">
+                        <h3>Digital Transformation</h3>
+                        <p>Modernize your business infrastructure.</p>
+                        <a href="#" class="btn-black">DIGITAL PLANS</a>
                     </div>
-                </article>
+                </div>
 
-                <article class="services-card">
+                <div class="stack-card">
                     <img src="images/marketing.jpg" alt="Marketing">
-                    <div class="card-content">
+                    <div class="gold-box">
                         <h3>Marketing</h3>
-                        <p>Data-driven strategies.</p>
-                        <a href="#" class="btn-secondary">View Plans</a>
+                        <p>Data-driven strategies for reach.</p>
+                        <a href="#" class="btn-black">MARKETING PLANS</a>
                     </div>
-                </article>
-            </section>
+                </div>
 
-            <section class="content-section">
-                <img src="images/vision.jpg" alt="Vision">
-                <div class="text-block">
+                </section>
+
+            <section class="vision-section" style="background-image: url('images/vision.jpg');">
+                <div class="hero-text">
                     <h2>Our Vision</h2>
-                    <p>To become the leading catalyst for creative innovation in a digital-first world.</p>
-                    <a href="#" class="btn-primary">Learn More</a>
+                    <p>To empower brands through innovation.</p>
+                    <a href="#" class="btn-gold">LEARN MORE</a>
                 </div>
             </section>
 
             <section class="team-section">
-                <div class="text-block">
-                    <h2>Our Team</h2>
-                </div>
-                <div class="team-grid">
-                    <article class="team-member">
-                        <img src="images/john.jpg" alt="John Doe">
+                <h2 class="section-title">Our Team</h2>
+                <div class="stack-card">
+                    <img src="images/john.jpg" alt="John">
+                    <div class="gold-box">
                         <h3>John Doe</h3>
-                        <p>CEO & Founder</p>
-                    </article>
-                    <article class="team-member">
-                        <img src="images/bob.jpg" alt="Bob Rite">
+                        <p class="role">CEO and Founder</p>
+                    </div>
+                </div>
+                <div class="stack-card">
+                    <img src="images/bob.jpg" alt="Bob">
+                    <div class="gold-box">
                         <h3>Bob Rite</h3>
-                        <p>CFO & Partner</p>
-                    </article>
+                        <p class="role">CFO and Partner</p>
+                    </div>
                 </div>
             </section>
 
             <section class="contact-section">
-                <div class="text-block">
-                    <h2>Contact Us</h2>
-                    <form class="contact-form">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" placeholder="Your Name">
-                        
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Your Email">
-                        
-                        <label for="message">Message</label>
-                        <textarea id="message" rows="4"></textarea>
-                        
-                        <button type="submit" class="btn-secondary">Send Message</button>
-                    </form>
+                <h2>Contact Us</h2>
+                <h3>Send us a message</h3>
+                <form class="contact-form">
+                    <label>Full Name</label>
+                    <input type="text">
+                    <label>Email</label>
+                    <input type="email">
+                    <button type="submit" class="btn-send">Send</button>
+                </form>
+
+                <div class="hours">
+                    <h3>Hours of operation</h3>
+                    <table class="hours-table">
+                        <tr class="table-header">
+                            <td>Days</td>
+                            <td>Hours</td>
+                        </tr>
+                        <tr>
+                            <td>Monday - Friday</td>
+                            <td>9 AM - 6 PM</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="location-map">
+                    <h3>Location</h3>
+                    <div class="map-placeholder">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.898!2d-75.75!3d45.35!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDIxJzAwLjAiTiA3NcKwNDUnMDAuMCJX!5e0!3m2!1sen!2sca!4v123456789" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
                 </div>
             </section>
         </main>
 
-        <footer class="main-footer">
+        <footer class="footer">
             <p>© 2026 Three Star Media Inc.</p>
-        </footer>
-
+            <p>1234 Street Name, City, State, 12345</p>
+        </header>
     </div>
 
 </body>
